@@ -6,7 +6,7 @@
 #    By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 14:51:11 by kkarakus          #+#    #+#              #
-#    Updated: 2023/10/16 17:05:10 by kkarakus         ###   ########.fr        #
+#    Updated: 2023/10/17 10:57:23 by kkarakus         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME):
 	@$(CC) $(FLAGS) -c $(SRCS)
-	@ar $(NAME) $(OBJS)
+	@ar -rc $(NAME) $(OBJS)
 
 clean:
 	@$(RM) $(OBJS)

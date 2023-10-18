@@ -6,7 +6,7 @@
 /*   By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:47:08 by kkarakus          #+#    #+#             */
-/*   Updated: 2023/10/17 17:53:57 by kkarakus         ###   ########.fr       */
+/*   Updated: 2023/10/18 10:18:05 by kkarakus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*last;
-
+	if (!lst)
+		return (NULL);
 	while (lst->next)
 		lst = lst->next;
-	last = lst->next;
-	return (last);
+	return (lst);
 }

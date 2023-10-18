@@ -6,7 +6,7 @@
 #    By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 14:51:11 by kkarakus          #+#    #+#              #
-#    Updated: 2023/10/17 17:54:15 by kkarakus         ###   ########.fr        #
+#    Updated: 2023/10/18 14:43:47 by kkarakus         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,11 @@ SRCS =			ft_atoi.c \
 
 BONUS_SRCS = 	ft_lstadd_back.c \
 				ft_lstadd_front.c \
+				ft_lstclear.c \
+				ft_lstdelone.c \
+				ft_lstiter.c \
 				ft_lstlast.c \
+				ft_lstmap.c \
 				ft_lstnew.c \
 				ft_lstsize.c 
 
@@ -69,12 +73,13 @@ bonus:
 	@ar -rc $(NAME) $(BONUS_OBJS)
 	
 clean:
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	@$(RM) $(NAME)
 	@$(RM) *.out
 	
 re: fclean all
+
 
 .PHONY: all clean fclean re

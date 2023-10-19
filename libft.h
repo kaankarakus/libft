@@ -6,7 +6,7 @@
 /*   By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:38:54 by kkarakus          #+#    #+#             */
-/*   Updated: 2023/10/18 13:45:16 by kkarakus         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:26:25 by kkarakus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-
-typedef unsigned char	t_byte;
 
 typedef struct s_list
 {

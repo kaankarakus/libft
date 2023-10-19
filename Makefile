@@ -6,7 +6,7 @@
 #    By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 14:51:11 by kkarakus          #+#    #+#              #
-#    Updated: 2023/10/18 14:43:47 by kkarakus         ###   ########.fr        #
+#    Updated: 2023/10/19 12:42:22 by kkarakus         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,27 +59,22 @@ OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 NAME = libft.a
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
-
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME):
-	@$(CC) $(FLAGS) -c $(SRCS)
-	@ar -rc $(NAME) $(OBJS)
+$(NAME): $(SRCS) $(OBJS)
+	ar -rc $(NAME) $(OBJS)
 
-bonus:
-	@$(CC) $(FLAGS) -c $(BONUS_SRCS)
-	@ar -rc $(NAME) $(BONUS_OBJS)
+bonus: $(BONUS_SRCS) $(BONUS_OBJS)
+	ar -rc $(NAME) $(BONUS_OBJS)
 	
 clean:
-	@$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	@$(RM) $(NAME)
-	@$(RM) *.out
+	$(RM) $(NAME)
 	
 re: fclean all
-
 
 .PHONY: all clean fclean re

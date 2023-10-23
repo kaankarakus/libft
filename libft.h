@@ -6,14 +6,13 @@
 /*   By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 10:38:54 by kkarakus          #+#    #+#             */
-/*   Updated: 2023/10/18 15:26:25 by kkarakus         ###   ########.fr       */
+/*   Updated: 2023/10/23 12:32:18 by kkarakus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 

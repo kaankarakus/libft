@@ -6,7 +6,7 @@
 /*   By: kkarakus <kkarakus@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:05:57 by kkarakus          #+#    #+#             */
-/*   Updated: 2023/10/23 12:32:03 by kkarakus         ###   ########.fr       */
+/*   Updated: 2023/10/24 09:31:47 by kkarakus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ static char	*check(int n)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	char	*tmp;
 	int		len;
 
 	if (n == 0 || n == -2147483648)
@@ -62,7 +61,5 @@ char	*ft_itoa(int n)
 		n /= 10;
 		len--;
 	}
-	tmp = str;
-	free(str);
-	return (tmp);
+	return (str);
 }
